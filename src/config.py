@@ -41,9 +41,9 @@ NUM_HEAD = 4
 NUM_ENCODER_LAYERS = 2
 NUM_DECODER_LAYERS = 2
 
-
 # 设备
-DEVICE = torch.device("cuda" if torch.cuda.is_available() else ("mps" if torch.backends.mps.is_available() else "cpu"))
+#DEVICE = torch.device("cuda" if torch.cuda.is_available() else ("mps" if torch.backends.mps.is_available() else "cpu"))
+DEVICE = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 if __name__ == '__main__':
     print(ROOT_DIR)
